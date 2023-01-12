@@ -1,0 +1,93 @@
+@keyframes active_nav{
+	from{
+		background-color: rgba(255, 255, 255, 0);
+	}to{
+		background-color: rgba(255, 255, 255, .4);
+	}
+}
+
+@keyframes deactive_nav{
+	from{
+		background-color: rgba(0, 0, 0, 1);
+	}to{
+		background-color: rgba(0, 0, 0, 0);
+	}
+}
+
+@keyframes show{
+	from{
+		color: rgba(0, 0, 0, 0);
+		letter-spacing: 30px;
+	}to{
+		color: rgba(0, 0, 0, 1);
+		letter-spacing: 20px;
+	}
+}
+
+@keyframes show_link{
+	from{
+
+	}to{
+		box-shadow: 0px 0px 15px #ffffff;
+	}
+}
+
+@keyframes show_cons{
+	from{
+		opacity: 0;
+	}to{
+		opacity: 1;	}
+}
+
+@keyframes shows{
+	from{
+		color: rgba(0, 0, 0, 0);
+		letter-spacing: 40px;
+	}to{
+		color: rgba(0, 0, 0, 1);
+		letter-spacing: 20px;
+	}
+}
+
+
+@keyframes show_sub{
+	from{
+		color: #00000000;
+	}to{
+		color: #000000ff;
+	}
+}
+
+@keyframes change-color{
+	from{
+		color: #000000ff;
+	}to{
+		color: #c8c8c8ff;
+	}
+}
+
+@keyframes show_about{
+	from{
+		height: 0%;
+		color: #00000000;
+	}to{
+		height: 40%;
+		color: #000000ff;
+	}
+}
+
+@keyframes show_letters{
+	from{
+		color: rgba(0, 0, 0, 1);
+	}to{
+		color: #002a69;
+	}
+}
+
+@keyframes show_fone{
+	from{
+		background: linear-gradient(rgba(200, 200, 200, .5), rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.8), rgba(200, 200, 200, 1)),rgba(200, 200, 200, 1);
+	}to{
+		background: linear-gradient(rgba(200, 200, 200, .5), rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.8), rgba(200, 200, 200, 1)),rgba(200, 200, 200, 0);
+	}
+}
