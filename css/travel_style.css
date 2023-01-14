@@ -150,7 +150,7 @@
 
 }
 
-.place_cont._first{
+.place_cont._first, .place_cont._second{
 	position: relative;
 	width: 0%;
 	height: 0%;
@@ -158,7 +158,7 @@
 	opacity: 0;
 }
 
-.place_cont._first._activ{
+.place_cont._first._activ, .place_cont._second._activ{
 	animation: show_cons 1s forwards;
 	width: 100%;
 	height: 100%;
