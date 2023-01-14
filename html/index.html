@@ -1,158 +1,195 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<title>ЧЕбы | главная(тестовая)</title>
-</head>
-<body class="bd">
-	<div class="header_cont">
-		<div class="header">
-			<div onclick="location.href='index.html'" class="title">
-				<p><span>ЧЕ</span>боксары</p>
-			</div>
-			<div class="navs">
-				<div onclick="location.href='economy.html'" class="nav">
-					<p>Экономика</p>
-				</div>
-				<div class="nav">
-					<p>Инфраструктура</p>
-				</div>
-				<div class="nav">
-					<p>Образование</p>
-				</div>
-				<div onclick="location.href='travel.html'" class="nav">
-					<p>Экскурсии</p>
-				</div>
-			</div>
-			<div class="project">
-				<p>О проекте</p>
-			</div>
-		</div>
-	</div>
-	<div class="back_video">
-		<video autoplay muted loop pip="false">
-        	<source src="../content/video/video.mp4" type="video/mp4" />
-    	</video>
-	</div>
-	<div class="welcome_cont">
-		<div class="welcome">
-			<div class="welcome_title">Добро пожаловать!</div>
-		</div>
-	</div>
-	<div class="about_cont">
-		<div class="about">
-			<div class="about_title">О городе</div>
-			<div class="subtitle">
-				<p>Чебоксары – город в европейской части России, столица Республики Чувашии. Еще в первой половине ХХ века это было тихое, провинциальное местечко, но сегодня оно превратилось в настоящий город-сад, по праву занимающий лидирующие позиции в стране по качеству окружающей среды.</p>
-			</div>
-		</div>
-	</div>
-	<div class="cons_cont">
-		<div class="cons">
-			<div class="cons_title">
-				<p>Преимущества</p>
-			</div>
-			<div class="conses">
-				<div class="con">
-					<div class="con_image"><img src="../content/img/экология_бел.png" alt=""></div>
-					<div class="con_title">
-						<p>Экология</p>
-					</div>
-					
-					<div class="con_sub">
-						<p>Признан самым экологичным и ухоженным город России.</p>
-					</div>
-				</div>
-				<div class="con">
-					<div class="con_image"><img src="../content/img/трансп_бел.png" alt=""></div>
-					<div class="con_title">
-						<p>Транспортная система</p>
-					</div>
-					<div class="con_sub">
-						<p>Чебоксары можно смело назвать городом троллейбусов — их очень много, и добраться на них можно почти куда угодно.</p>
-					</div>
-				</div>
-				<div class="con">
-					<div class="con_image"><img src="../content/img/трудоустр_бел.png" alt=""></div>
-					<div class="con_title">
-						<p>Трудоустройство</p>
-					</div>
-					<div class="con_sub">
-						<p>Чебоксары является крупным экономическим центром в Среднем Поволжье.</p>
-					</div>
-				</div>
-				<div class="con">
-					<div class="con_image"><img src="../content/img/культура_бел.png" alt=""></div>
-					<div class="con_title">
-						<p>Культура</p>
-					</div>
-					<div class="con_sub">
-						<p>Город по праву считается «культурной столицей Поволжья». В этом красивом городе присутствует множество достопримечательностей и замечательных мест.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="video_cont">
-			<div class="video_block">
-				<div class="video_title">Видео о нашем городе</div>
-				<video src="../content/video/video_1.mp4" class="video" controls></video>
-			</div>
-		</div>	
-	<div class="links_cont">
-		<div class="links">
-			<div class="links_title">
-				<p>Ищите нас в социальных сетях</p>
-			</div>
-			<div class="links_count">
-				<div onclick="location.href='https://vk.com/cheboksary21tu'" class="link">
-					<div class="link_img"><img src="../content/img/vk.png" alt=""></div>
-					<div class="link_title">
-						<p>ВКонтакте</p>
-					</div>
-				</div>
-				<div class="link">
-					<div class="link_img"><img src="../content/img/youtube.png" alt=""></div>
-					<div class="link_title">
-						<p>YouTube</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="../js/script.js"></script>
-	<script type="text/javascript">
-		var changeCorrect = 3600;
-		var aboutCorrect = 550;
-		var pageWidth = window.innerWidth;
-		if(pageWidth <=1080){
-		    console.log("mobile");
-	    	aboutCorrect = 1000;
-		    changeCorrect =3600;
-		}else{
-		    console.log("laptop");
-		    changeCorrect =1388;
-		    aboutCorrect = 550;
-		}
-		window.onscroll = function (e) {
-			const headed = document.querySelector(".header_cont");
-			const abouter = document.querySelector(".about_cont");
-			const cons = document.querySelector(".conses");
-			const con_title = document.querySelector(".cons_title");
-			var scroller = window.scrollY
-		    console.log(window.scrollY); // Value of scroll Y in px
-			if(scroller>=550){
-		    	abouter.classList.add("_anima");
-		    }
-		    if(scroller>=changeCorrect){
-		    	headed.classList.add("_animate");
-		    	con_title.style.cssText = "animation: show_cons 1.5s forwards;";
-		    	cons.style.cssText = "animation: show_cons 1s 500ms forwards;";
-		    }else{
-		    	headed.classList.remove("_animate");
-	    	}
-		} 
-	</script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/header.css"/>
+    <title>ЧЕбы | главная(тестовая)</title>
+  </head>
+  <body class="bd">
+    <div class="header_cont">
+      <div class="header">
+        <div onClick="location.href='index.html'" class="title">
+          <p><span>ЧЕ</span>боксары</p>
+        </div>
+        <div class="navs">
+          <div onClick="location.href='economy.html'" class="nav">
+            <p>Экономика</p>
+          </div>
+          <div onClick="location.href='infrastructure.html'" class="nav">
+            <p>Инфраструктура</p>
+          </div>
+          <div onClick="location.href='study.html'" class="nav">
+            <p>Образование</p
+            >
+          </div>
+          <div onClick="location.href='travel.html'" class="nav">
+            <p>Экскурсии</p>
+          </div>
+        </div>
+        <div class="project">
+          <p>О проекте</p>
+        </div>
+      </div>
+    </div>
+    <div class="back_video">
+      <video autoplay muted loop pip="false">
+        <source src="../content/video/video.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="welcome_cont">
+      <div class="welcome">
+        <div class="welcome_title">Добро пожаловать!</div>
+      </div>
+    </div>
+    <div class="about_cont">
+      <div class="about">
+        <div class="about_title">О городе</div>
+        <div class="subtitle">
+          <p>
+            Чебоксары – город в европейской части России, столица Республики
+            Чувашии. Еще в первой половине ХХ века это было тихое,
+            провинциальное местечко, но сегодня оно превратилось в настоящий
+            город-сад, по праву занимающий лидирующие позиции в стране по
+            качеству окружающей среды.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="cons_cont">
+      <div class="cons">
+        <div class="cons_title">
+          <p>Преимущества</p>
+        </div>
+        <div class="conses">
+          <div class="con">
+            <div class="con_image">
+              <img src="../content/img/экология_бел.png" alt="" />
+            </div>
+            <div class="con_title">
+              <p>Экология</p>
+            </div>
+
+            <div class="con_sub">
+              <p>Признан самым экологичным и ухоженным город России.</p>
+            </div>
+          </div>
+          <div class="con">
+            <div class="con_image">
+              <img src="../content/img/трансп_бел.png" alt="" />
+            </div>
+            <div class="con_title">
+              <p>Транспортная система</p>
+            </div>
+            <div class="con_sub">
+              <p>
+                Чебоксары можно смело назвать городом троллейбусов — их очень
+                много, и добраться на них можно почти куда угодно.
+              </p>
+            </div>
+          </div>
+          <div class="con">
+            <div class="con_image">
+              <img src="../content/img/трудоустр_бел.png" alt="" />
+            </div>
+            <div class="con_title">
+              <p>Трудоустройство</p>
+            </div>
+            <div class="con_sub">
+              <p>
+                Чебоксары является крупным экономическим центром в Среднем
+                Поволжье.
+              </p>
+            </div>
+          </div>
+          <div class="con">
+            <div class="con_image">
+              <img src="../content/img/культура_бел.png" alt="" />
+            </div>
+            <div class="con_title">
+              <p>Культура</p>
+            </div>
+            <div class="con_sub">
+              <p>
+                Город по праву считается «культурной столицей Поволжья». В этом
+                красивом городе присутствует множество достопримечательностей и
+                замечательных мест.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="video_cont">
+      <div class="video_block">
+        <div class="video_title">Видео о нашем городе</div>
+        <video
+          src="../content/video/video_1.mp4"
+          class="video"
+          controls
+        ></video>
+      </div>
+    </div>
+    <div class="links_cont">
+      <div class="links">
+        <div class="links_title">
+          <p>Ищите нас в социальных сетях</p>
+        </div>
+        <div class="links_count">
+          <div
+            onclick="location.href='https://vk.com/cheboksary21tu'"
+            class="link"
+          >
+            <div class="link_img">
+              <img src="../content/img/vk.png" alt="" />
+            </div>
+            <div class="link_title">
+              <p>ВКонтакте</p>
+            </div>
+          </div>
+          <div class="link">
+            <div class="link_img">
+              <img src="../content/img/youtube.png" alt="" />
+            </div>
+            <div class="link_title">
+              <p>YouTube</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/script.js"></script>
+    <script type="text/javascript">
+      var changeCorrect = 3600;
+      var aboutCorrect = 550;
+      var pageWidth = window.innerWidth;
+      if (pageWidth <= 1080) {
+        console.log("mobile");
+        aboutCorrect = 1000;
+        changeCorrect = 3600;
+      } else {
+        console.log("laptop");
+        changeCorrect = 1388;
+        aboutCorrect = 550;
+      }
+      window.onscroll = function (e) {
+        const headed = document.querySelector(".header_cont");
+        const abouter = document.querySelector(".about_cont");
+        const cons = document.querySelector(".conses");
+        const con_title = document.querySelector(".cons_title");
+        var scroller = window.scrollY;
+        console.log(window.scrollY); // Value of scroll Y in px
+        if (scroller >= 550) {
+          abouter.classList.add("_anima");
+        }
+        if (scroller >= changeCorrect) {
+          headed.classList.add("_animate");
+          con_title.style.cssText = "animation: show_cons 1.5s forwards;";
+          cons.style.cssText = "animation: show_cons 1s 500ms forwards;";
+        } else {
+          headed.classList.remove("_animate");
+        }
+      };
+    </script>
+  </body>
 </html>

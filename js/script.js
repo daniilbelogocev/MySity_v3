@@ -16,11 +16,11 @@ if(pageWidth <=1080){
     aboutCorrect = 550;
 }
 function activating(event) {
-	this.classList.add("_anima");
+	this.classList.add("._anima");
 }
 
 function deactivating(event) {
-	this.classList.remove("_anima");
+	this.classList.remove("._anima");
 }
 
 
@@ -36,16 +36,16 @@ window.onscroll = function (e) {
 	const cons = document.querySelector(".conses");
 	const con_title = document.querySelector(".cons_title");
 	var scroller = window.scrollY
-    console.log(window.scrollY); // Value of scroll Y in px
+    console.log(window.scrollY);
 	if(scroller>=550){
-    	abouter.classList.add("_anima");
+    	abouter.classList.add("._anima");
     }
     if(scroller>=changeCorrect){
-    	headed.classList.add("_animate");
+    	headed.classList.add("._animate");
     	con_title.style.cssText = "animation: show_cons 1.5s forwards;";
     	cons.style.cssText = "animation: show_cons 1s 500ms forwards;";
     }else{
-    	headed.classList.remove("_animate");
+    	headed.classList.remove("._animate");
     }
 }    
 
